@@ -43,11 +43,17 @@
   margin-left: 0.5rem;
 }
 
+
+/*********************************/
+
 .information1 {
   /* font-family: "Josefin Sans"; */
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 600;
+}
+.information1 span{
+    display: none;
 }
 .information2 {
   display: flex;
@@ -56,11 +62,11 @@
 }
 .information3 {
   display: flex;
-  gap: 3vw;
+  gap: 1vw;
 }
-.infoImage{
-    display: flex;
-    gap: 1.5rem;
+.infoImage {
+  display: flex;
+  gap: 1.5rem;
 }
 .inputFields input,
 .textArea {
@@ -91,6 +97,10 @@
 .message textarea {
   margin-top: 1rem;
   color: white;
+  width: 100%;
+  resize: none;
+  padding: .5rem;
+  height: 10rem;
 }
 .sendMessage {
   display: flex;
@@ -115,25 +125,58 @@
 }
 
 @media (max-width: 768px) {
-    .contactContainer {
-        flex-direction: column;
-      }
-    .left{
-         text-align: center;
-         padding: 1.5rem;
-    }
-    .infoImage{
-        flex-direction: column;
-        gap: 0rem;
-    }
-    .information2 {
-        gap: 1rem;
-        margin: 2rem auto;
-    }
-    .information3{
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        gap: 10vw;
-    }
+  .contactContainer {
+    flex-direction: column;
   }
+  .left {
+    text-align: center;
+    padding: 1.5rem 0rem;
+    border: none;
+  }
+  .right {
+    padding: 3rem 1rem;
+  }
+  .infoImage {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .information1{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .information1 span{
+    display: block;
+  }
+  .information2 {
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+  .information3 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 4vw;
+  }
+  .inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .inputFields input {
+    height: 2rem;
+    border-radius: 3.5rem;
+  }
+  .radioFields {
+    font-size: .8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.4rem;
+    margin-top: 1.6rem;
+  }
+  .message textarea {
+    padding: 1rem;
+    height: 5rem;
+    border-radius: 5rem;
+  }
+}
