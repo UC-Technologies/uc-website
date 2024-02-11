@@ -41,28 +41,28 @@ const TestimonialSlider = () => {
             &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna.&quot;
           </p>
-          <p className={styles.testimonialAuthor}>- Name</p>
+          <p className={styles.testimonialAuthor}>- name</p>
         </div>
         <div className={styles.testimonial}>
           <p className={styles.testimonialText}>
             &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna.&quot;
           </p>
-          <p className={styles.testimonialAuthor}>- Name</p>
+          <p className={styles.testimonialAuthor}>- name</p>
         </div>
         <div className={styles.testimonial}>
           <p className={styles.testimonialText}>
             &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna.&quot;
           </p>
-          <p className={styles.testimonialAuthor}>- Name</p>
+          <p className={styles.testimonialAuthor}>- name</p>
         </div>
         <div className={styles.testimonial}>
           <p className={styles.testimonialText}>
             &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna.&quot;
           </p>
-          <p className={styles.testimonialAuthor}>- Name</p>
+          <p className={styles.testimonialAuthor}>- name</p>
         </div>
       </Slider>
     </div>
