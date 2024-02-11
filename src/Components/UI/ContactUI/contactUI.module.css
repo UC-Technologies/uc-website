@@ -43,7 +43,6 @@
   margin-left: 0.5rem;
 }
 
-
 /*********************************/
 
 .information1 {
@@ -52,8 +51,8 @@
   font-style: normal;
   font-weight: 600;
 }
-.information1 span{
-    display: none;
+.information1 span {
+  display: none;
 }
 .information2 {
   display: flex;
@@ -99,7 +98,7 @@
   color: white;
   width: 100%;
   resize: none;
-  padding: .5rem;
+  padding: 0.5rem;
   height: 10rem;
 }
 .sendMessage {
@@ -122,6 +121,7 @@
     5px 5px 10px 0px rgba(0, 0, 0, 0.5) inset,
     4px 6px 10px 0px rgba(0, 0, 0, 0.5),
     -5px -5px 7px 0px rgba(69, 69, 69, 0.7);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -140,11 +140,11 @@
     flex-direction: column;
     gap: 0rem;
   }
-  .information1{
+  .information1 {
     font-size: 1.5rem;
     line-height: 1.8rem;
   }
-  .information1 span{
+  .information1 span {
     display: block;
   }
   .information2 {
@@ -167,7 +167,7 @@
     border-radius: 3.5rem;
   }
   .radioFields {
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
