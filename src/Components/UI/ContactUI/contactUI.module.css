@@ -4,24 +4,24 @@
   display: flex;
   background-color: #202020;
   filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.03));
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
 .left {
-  color: #FFFFFF;
+  color: #ffffff;
   flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 3rem;
-  margin: .5rem;
-  background-color: #A61415;
-  border: #686868 .3rem solid;
-  border-radius: .4rem;
+  margin: 0.5rem;
+  background-color: #a61415;
+  border: #686868 0.3rem solid;
+  border-radius: 0.4rem;
 }
 .right {
   flex: 5;
   padding: 3rem 2.6rem;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 
 .inputFields {
@@ -30,75 +30,83 @@
   grid-template-rows: repeat(2, 1fr);
   /* gap: 2rem; */
   row-gap: 3rem;
+  column-gap: 3rem;
   /* margin-top: 1rem; */
 }
 .radioFields {
   display: flex;
   justify-content: space-between;
-  padding-right: 15rem;
   margin-top: 1rem;
+  width: 95%;
 }
-.radioFields label{
-    margin-left: .5rem;
-}
-
-.information1{
-    /* font-family: "Josefin Sans"; */
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 600;
-}
-.information2{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.information3{
-    display: flex;
-    gap: 3rem;
+.radioFields label {
+  margin-left: 0.5rem;
 }
 
-.inputFields input,.textArea{
-    background-color: #2A2A2A;
-    stroke-width: 1px;
-    stroke: var(--button-outline, #686868);
-    box-shadow: -6px -6px 5px 0px #313131 inset, 6px 6px 5px 0px rgba(0, 0, 0, 0.50) inset;
-    border-radius: .4rem;
+.information1 {
+  /* font-family: "Josefin Sans"; */
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
 }
-.inputFields input{
-    width: 80%;
-    height: 2.5rem;
-    margin-top: .5rem;
-    padding-left: .8rem;
-    color: white;
+.information2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-.inputFields label{
-    font-size: .8rem;
+.information3 {
+  display: flex;
+  gap: 3vw;
 }
-.subject{
-    margin-top: 3rem;
+
+.inputFields input,
+.textArea {
+  background-color: #2a2a2a;
+  stroke-width: 1px;
+  stroke: var(--button-outline, #686868);
+  box-shadow:
+    -6px -6px 5px 0px #313131 inset,
+    6px 6px 5px 0px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 0.4rem;
 }
-.message{
-    margin-top: 2.5rem;
+.inputFields input {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  padding-left: 0.8rem;
+  color: white;
 }
-.message textarea{
-    margin-top: 1rem;
-    color: white;
+.inputFields label {
+  font-size: 0.8rem;
 }
-.sendMessage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto auto auto ;
+.subject {
+  margin-top: 3rem;
 }
-.sendMessage button{
-    /* border-radius: 66px; */
-    color: white;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: .7rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 53px;
-    border: 2px solid #686868;
-    background: #A61415;
-    box-shadow: -2px -4px 5px 0px rgba(49, 49, 49, 0.50) inset, 5px 5px 10px 0px rgba(0, 0, 0, 0.50) inset, 4px 6px 10px 0px rgba(0, 0, 0, 0.50), -5px -5px 7px 0px rgba(69, 69, 69, 0.70);
+.message {
+  margin-top: 2.5rem;
+}
+.message textarea {
+  margin-top: 1rem;
+  color: white;
+}
+.sendMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto auto auto;
+}
+.sendMessage button {
+  /* border-radius: 66px; */
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 53px;
+  border: 2px solid #686868;
+  background: #a61415;
+  box-shadow:
+    -2px -4px 5px 0px rgba(49, 49, 49, 0.5) inset,
+    5px 5px 10px 0px rgba(0, 0, 0, 0.5) inset,
+    4px 6px 10px 0px rgba(0, 0, 0, 0.5),
+    -5px -5px 7px 0px rgba(69, 69, 69, 0.7);
 }

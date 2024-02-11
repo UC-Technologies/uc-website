@@ -6,9 +6,24 @@ const ContactUI = () => {
       <div className={styles.left}>
         <div className={styles.information1}>Contact Information</div>
         <div className={styles.information2}>
-          <div>pho 12345678</div>
-          <div>pho juman60000@gmail</div>
-          <div>pho NIT Silchar</div>
+          <div style={{ display: "flex", gap: "1.5rem" }}>
+            <div>
+              <img src="/contactUs/bxs_phone-call.svg" alt="call" />
+            </div>
+            <div>+1234567890</div>
+          </div>
+          <div style={{ display: "flex", gap: "1.5rem" }}>
+            <div>
+              <img src="/contactUs/ic_sharp-email.svg" alt="call" />{" "}
+            </div>
+            <div>juman60000@gmail</div>
+          </div>
+          <div style={{ display: "flex", gap: "1.5rem" }}>
+            <div>
+              <img src="/contactUs/carbon_location-filled.svg" alt="call" />
+            </div>
+            <div>NIT Silchar</div>
+          </div>
         </div>
         <div className={styles.information3}>
           <div>pho</div>
@@ -36,7 +51,12 @@ const ContactUI = () => {
           <div>
             <label htmlFor="username">Phone Number</label>
             <br />
-            <input type="text" id="username" name="username" />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="+12 198739879"
+            />
           </div>
         </div>
         <div className={styles.subject}>
