@@ -209,3 +209,32 @@ span {
   line-height: 150%; /* 2.25rem */
   letter-spacing: 0.12rem;
 }
+
+@media (max-width: 700px) {
+  .contentSection {
+    flex-direction: column;
+  }
+
+  .whatIsUC,
+  .whyUC {
+    padding: 15px;
+  }
+
+  .viewLessButton {
+    width: 6.875rem;
+    height: 2.0625rem;
+    margin-bottom: 1rem;
+  }
+  .paragraph {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    color: #fff;
+
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
