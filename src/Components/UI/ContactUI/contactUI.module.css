@@ -1,0 +1,23 @@
+.contactContainer{
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+}
+.left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.right{
+    flex: 5;
+    padding: 1rem;
+}
+
+.inputFields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
