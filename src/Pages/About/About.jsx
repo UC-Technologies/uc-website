@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./about.module.scss";
+import TestimonialSlider from "../../Components/Sliider";
 
 const About = () => {
   const [showTestimonials, setShowTestimonials] = useState(false);
@@ -37,6 +38,7 @@ const About = () => {
         <div className={styles.testimonialsSection1}>
           <section className={styles.testimonialsSection}>
             <div className={styles.Testi}>Testimonials</div>
+            <TestimonialSlider />
           </section>
         </div>
       )}
