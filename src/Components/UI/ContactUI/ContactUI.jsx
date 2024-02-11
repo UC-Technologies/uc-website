@@ -1,24 +1,25 @@
 import React from "react";
 import styles from "./contactUI.module.css";
+
 const ContactUI = () => {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.left}>
         <div className={styles.information1}>Contact Information</div>
         <div className={styles.information2}>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
+          <div className={styles.infoImage}>
             <div>
               <img src="/contactUs/bxs_phone-call.svg" alt="call" />
             </div>
             <div>+1234567890</div>
           </div>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
+          <div className={styles.infoImage}>
             <div>
               <img src="/contactUs/ic_sharp-email.svg" alt="call" />{" "}
             </div>
             <div>juman60000@gmail</div>
           </div>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
+          <div className={styles.infoImage}>
             <div>
               <img src="/contactUs/carbon_location-filled.svg" alt="call" />
             </div>

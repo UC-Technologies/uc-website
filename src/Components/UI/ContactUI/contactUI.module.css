@@ -58,7 +58,10 @@
   display: flex;
   gap: 3vw;
 }
-
+.infoImage{
+    display: flex;
+    gap: 1.5rem;
+}
 .inputFields input,
 .textArea {
   background-color: #2a2a2a;
@@ -110,3 +113,27 @@
     4px 6px 10px 0px rgba(0, 0, 0, 0.5),
     -5px -5px 7px 0px rgba(69, 69, 69, 0.7);
 }
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+      }
+    .left{
+         text-align: center;
+         padding: 1.5rem;
+    }
+    .infoImage{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .information2 {
+        gap: 1rem;
+        margin: 2rem auto;
+    }
+    .information3{
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 10vw;
+    }
+  }
