@@ -19,49 +19,60 @@ const ContactUI = () => {
       <div className={styles.right}>
         <div className={styles.inputFields}>
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">First Name</label>
             <br />
             <input type="text" id="username" name="username" />
           </div>
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Last Name</label>
             <br />
             <input type="text" id="username" name="username" />
           </div>
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Email</label>
             <br />
             <input type="text" id="username" name="username" />
           </div>
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Phone Number</label>
             <br />
             <input type="text" id="username" name="username" />
           </div>
         </div>
-        <div>
-          <div>Select Subject?</div>
+        <div className={styles.subject}>
+          <div style={{ fontSize: "1.2rem" }}>Select Subject?</div>
           <div className={styles.radioFields}>
             <div>
               <input type="radio" id="username" name="username" />
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">General Inquiry</label>
             </div>
             <div>
               <input type="radio" id="username" name="username" />
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">General Inquiry</label>
             </div>
             <div>
               <input type="radio" id="username" name="username" />
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">General Inquiry</label>
             </div>
             <div>
               <input type="radio" id="username" name="username" />
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">General Inquiry</label>
             </div>
           </div>
         </div>
-        <div></div>
-        <div></div>
+        <div className={styles.message}>
+          <label htmlFor="username">Message</label>
+          <textarea
+            id="myTextarea"
+            rows="8"
+            style={{ width: "100%", resize: "none", padding: ".5rem" }}
+            placeholder="Write your message.."
+            className={styles.textArea}
+          />
+        </div>
+        <div className={styles.sendMessage}>
+          <button>Send Message</button>
+        </div>
       </div>
     </div>
   );
