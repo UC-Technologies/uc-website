@@ -1,5 +1,5 @@
 const App = () => {
-  return <main>This is main page</main>;
+  return <main>this is home page</main>;
 };
 
 export default App;
