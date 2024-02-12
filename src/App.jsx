@@ -1,13 +1,5 @@
-
-
-
-
 const App = () => {
-  return (
-    <main>
-      This is home page
-    </main>
-  )
-}
+  return <main>This is main page</main>;
+};
 
-export default App
+export default App;
