@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./contactUI.module.css";
+import styles from "./contactUI.module.scss";
 
 const ContactUI = () => {
   const [firstName, setFirstName] = useState();
