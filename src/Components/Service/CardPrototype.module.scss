@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  color: white;
+  padding: 1em;
+  height: 400px;
+  width: 5vw;
+  background: #202020;
+  border: 1px solid #686868;
+  box-shadow:
+    4px 4px 15px #00000085,
+    -4px -4px 15px #68686880;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: width 0.5s ease-out;
+  .card {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    text-align: start;
+    top: 95%;
+    left: 0.8rem;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    transition:
+      transform 1s ease,
+      top 1.2s ease;
+  }
+  .active {
+    transform: rotate(0deg);
+    top: 1.2rem;
+  }
+}
+.expand {
+  width: 40vw;
+}
+
+@media (580px <= width < 1024px) {
+  .container {
+    height: 300px;
+    width: 4vw;
+    font-size: 1.4rem;
+    padding: 1em;
+    .card {
+      left: 0.4rem;
+    }
+    .active {
+      left: 1rem;
+    }
+  }
+  .expand {
+    width: 40vw;
+  }
+}
+
+@media (width < 580px) {
+  .container {
+    border-radius: 0.5rem;
+    height: 150px;
+    width: 4vw;
+    font-size: 0.7rem;
+    padding: 1em;
+    .card {
+      top: 95%;
+      left: 0.2rem;
+    }
+    .active {
+      left: 0.4rem;
+      top: 0.4rem;
+    }
+  }
+  .expand {
+    width: 35vw;
+  }
+}

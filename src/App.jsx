@@ -1,11 +1,5 @@
-import ContactUs from "./Pages/ContactUs/ContactUs";
-
 const App = () => {
-  return (
-    <main>
-      <ContactUs></ContactUs>
-    </main>
-  );
+  return <main>this is home page</main>;
 };
 
 export default App;

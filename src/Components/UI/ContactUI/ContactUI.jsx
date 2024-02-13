@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import styles from "./contactUI.module.css";
+import styles from "./contactUI.module.scss";
 
 const ContactUI = () => {
   const [firstName, setFirstName] = useState();
@@ -96,6 +97,7 @@ const ContactUI = () => {
               type="text"
               id="username"
               name="username"
+              value={firstName}
               onChange={handleFirstNameChange}
             />
           </div>
@@ -106,6 +108,7 @@ const ContactUI = () => {
               type="text"
               id="username"
               name="username"
+              value={lastName}
               onChange={handleLastNameChange}
             />
           </div>
@@ -115,6 +118,7 @@ const ContactUI = () => {
             <input
               type="text"
               id="username"
+              value={email}
               name="username"
               onChange={handleEmailChange}
             />
@@ -127,6 +131,7 @@ const ContactUI = () => {
               id="username"
               name="username"
               placeholder="+12 198739879"
+              value={Phone}
               onChange={handlePhoneChange}
             />
           </div>
@@ -188,6 +193,7 @@ const ContactUI = () => {
             id="myTextarea"
             placeholder="Write your message.."
             className={styles.textArea}
+            value={msg}
             onChange={handleMessage}
           />
         </div>
