@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.services {
+  padding: 2rem 1rem;
+  width: 100%;
+  background-color: #202020;
+  h1 {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  .wrapper {
+    padding: 2rem;
+    gap: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+  }
+}
+
+.prototypes {
+  width: 100%;
+  background-color: #202020;
+  h1 {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  .wrapper {
+    padding: 2rem 1rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (width < 512px) {
+  .services {
+    padding: 1.6rem 0.8rem;
+  }
+  .prototypes {
+    .wrapper {
+      padding: 1.2rem 0.6rem;
+      gap: 0.5rem;
+    }
+  }
+}
