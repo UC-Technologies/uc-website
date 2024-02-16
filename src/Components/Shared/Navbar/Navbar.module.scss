@@ -61,7 +61,7 @@ nav {
 }
 
 .toggle {
-  display: block;
+  display: none;
   .mobile_menu {
     position: fixed;
     height: 100vh;
@@ -106,6 +106,9 @@ nav {
 }
 
 @media (max-width: 950px) {
+  .toggle {
+    display: block;
+  }
   nav {
     display: flex;
     justify-content: space-between;

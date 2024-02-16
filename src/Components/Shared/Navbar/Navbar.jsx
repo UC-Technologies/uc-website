@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <nav>
