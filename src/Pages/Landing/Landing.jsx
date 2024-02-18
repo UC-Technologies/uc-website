@@ -30,6 +30,9 @@ const Landing = () => {
           />
         </div>
       </div>
+      <button>
+        GET <br /> STARTED
+      </button>
     </div>
   );
 };
