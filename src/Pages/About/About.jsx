@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./about.module.scss";
+import styles from "./About.module.scss";
 import TestimonialSlider from "../../Components/Sliider";
 import Navbar from "../../Components/Shared/Navbar/Navbar";
 
