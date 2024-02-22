@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Services.module.scss";
-import CardService from "../../Components/Service/CardService";
-import CardPrototype from "../../Components/Service/CardPrototype";
+import CardService from "../../Service/CardService";
+import CardPrototype from "../../Service/CardPrototype";
 
 const Services = () => {
   const [active, setActive] = useState(1);
