@@ -145,3 +145,42 @@
     color: #fff;
   }
 }
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .teamMember {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+  }
+  .teamMember {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  .teamMember {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .teamMember {
+    margin-bottom: 4rem;
+  }
+}
