@@ -33,7 +33,7 @@
     "src/**/index.jsx"
   ],
   "rules": {
-    
+    "react/no-array-index-key": "off",
     "arrow-body-style": 0,
     "class-methods-use-this": 0,
     "import/imports-first": 0,
