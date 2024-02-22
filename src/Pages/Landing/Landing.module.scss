@@ -33,6 +33,12 @@
         font-weight: 400;
         line-height: 5.3125rem;
         font-size: 5.3125rem;
+        .red_text {
+          -webkit-background-clip: text !important;
+          -webkit-text-fill-color: transparent;
+          background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgb(51, 47, 47) 100%);
+          background-clip: text;
+        }
         .second {
           font-family: "Josefin Sans", sans-serif;
           color: white;

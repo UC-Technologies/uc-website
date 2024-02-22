@@ -1,10 +1,12 @@
-import Navbar from "./Components/Shared/Navbar/Navbar";
+// import Navbar from "./Components/Shared/Navbar/Navbar";
+import Landing from "./Pages/Landing/Landing";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>This is home page</main>
+      <Landing />
     </>
   );
 };
