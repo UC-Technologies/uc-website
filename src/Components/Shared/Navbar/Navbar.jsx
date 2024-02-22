@@ -1,33 +1,40 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <nav>
-        <a href="/">
+        <Link to="/">
           <img
             src="https://res.cloudinary.com/dvra8rj4n/image/upload/f_auto,q_auto/uzz9udxyddyqayl7nzfg"
             alt="UC_LOGO"
             className={styles.logo}
           />
-        </a>
+        </Link>
         <div className={styles.button_wrapper}>
-          <button className={styles.btn_active} onClick={null}>
-            HOME
-          </button>
-          <button className={styles.btn_active} onClick={null}>
-            SERVICES
-          </button>
+          <Link to="/">
+            <button className={styles.btn_active} onClick={null}>
+              HOME
+            </button>
+          </Link>
+          <Link to="/services">
+            <button className={styles.btn_active}>SERVICES</button>
+          </Link>
           <button className={styles.btn_active} onClick={null}>
             PROJECTS
           </button>
-          <button className={styles.btn_active} onClick={null}>
-            ABOUT US
-          </button>
-          <button className={styles.contact_btn} onClick={null}>
-            CONTACT US
-          </button>
+          <Link to="/about">
+            <button className={styles.btn_active} onClick={null}>
+              ABOUT US
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className={styles.contact_btn} onClick={null}>
+              CONTACT US
+            </button>
+          </Link>
         </div>
         <div onClick={() => setToggle(!toggle)} className={styles.hamburger_icon}>
           <img

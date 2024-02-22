@@ -13,7 +13,12 @@ const Landing = () => {
         <div className={styles.hero_text}>
           <p className={styles.first}>
             Empowering vision, <br /> creating digital <br /> masterpieces{" "}
-            <span className={styles.red_text}>faster</span> <br />
+            <span className={styles.animatedtext}>
+              <span className={styles.red_text}>faster</span>
+              {/* <span className={styles.red_text}>with ease</span>
+              <span className={styles.red_text}>efficiently</span> */}
+            </span>
+            <br />
             <p className={styles.second}>
               Embark upon a Digital Odyssey with UC- your <br /> premier creative
               alley,where we guide you, <br /> consult and transform your concepts into{" "}
@@ -33,6 +38,18 @@ const Landing = () => {
       <button>
         GET <br /> STARTED
       </button>
+      <div className={styles.box}>
+        <div className={styles.ellipse}></div>
+      </div>
+      <div className={styles.box2}>
+        <div className={styles.ellipse2}></div>
+      </div>
+      <div className={styles.box3}>
+        <div className={styles.ellipse3}></div>
+      </div>
+      <div className={styles.box4}>
+        <div className={styles.ellipse4}></div>
+      </div>
     </div>
   );
 };
