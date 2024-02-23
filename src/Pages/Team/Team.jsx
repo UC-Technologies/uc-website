@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import styles from "./team.module.scss";
+import styles from "./Team.module.scss";
 import HeyIcon from "../../Components/Team/Circle1";
 
 const teamMembers = [
