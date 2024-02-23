@@ -1,0 +1,186 @@
+* {
+  background: #202020;
+}
+
+.teamContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #f0eded;
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.teamTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.teamMember {
+  margin-bottom: 1rem;
+  // display: flex;
+  // flex-direction: column;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  width: fit-content;
+}
+
+.teamMember1 {
+}
+.red {
+  color: red; // Change the color as needed
+}
+.firstMemberContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.memberImage {
+  border-radius: 2.2rem;
+  width: 12rem;
+  height: 12rem;
+
+  object-fit: cover;
+}
+
+.memberName {
+  position: absolute;
+  width: fit-content;
+  flex-direction: row;
+  min-width: 100px;
+
+  margin-right: 1.5rem;
+  margin-top: 17rem;
+
+  border-radius: 1.5625rem;
+  border: 1px solid var(--button-outline, #686868);
+  background: #202020;
+  padding: 0.5rem;
+
+  box-shadow:
+    5px 5px 10px 0px rgba(0, 0, 0, 0.5),
+    -10px -8px 10px 0px rgba(49, 49, 49, 0.5);
+}
+.memberDesignation {
+  rotate: 90deg;
+  width: 2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.imDes1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.memberImage1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+.memberImage {
+  border-radius: 2.5rem;
+  border: 2px solid var(--button-outline, #686868);
+  background: lightgray 50% / cover no-repeat;
+
+  box-shadow:
+    5px 5px 10px 0px rgba(0, 0, 0, 0.5),
+    -10px -8px 10px 0px rgba(49, 49, 49, 0.5);
+}
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+.teamMember {
+  margin-bottom: 6rem;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  background: #202020;
+  display: none;
+}
+
+.heyIcon {
+  position: absolute;
+  padding-left: 0.5rem;
+}
+
+.githubIcon,
+.linkedinIcon {
+  transform: translate(-150%, 0%);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.showIcons {
+  display: flex;
+}
+
+.githubIcon,
+.linkedinIcon {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .teamMember {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+  }
+  .teamMember {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  .teamMember {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .teamMember {
+    margin-bottom: 4rem;
+  }
+}
